@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="ayu.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <title>ayu ningrat</title>
+</head>
+<body>
+  <div class="conteiner">
+    <navbar class="navbar">
+    <div class="nama">
+      <h2 class="nama1" >Ayu</h2>
+      <h2 class="nama2">Ningrat</h2>
+    </div>
+    <div class="navmenu">
+      <li><a id="profile">Profile</a></li>
+      <li id="tentang"><a>Tentang</a></li>
+      <li id="project"><a>Project</a></li>
+    </div>
+    </navbar>
+  </div>
+      <div id="profile1">
+      <h2>Nama saya :<span>Ayu Ningrat</span></h2>
+      <h2>Alamat :<span>Cirebon jl.perjuangan</span></h2>
+      <h2>Umur :<span>20 tahun</span></h2>
+      <h2>Hobi :<span>mengaji</span></h2>
+    </div>
+      <div id="tentang1">
+      <span>Halo nama saya</span>
+      <span>Ayu Ningrat</span>
+      <br>
+      <br>
+      <br>
+      <span>Hobi : voly, membaca, menyanyi</span>
+      <br>
+      <br>
+      <br>
+      <span>Makanan kesukaan : mie bakso</span>
+      <br>
+      <br>
+      <span>motto hidup : Kejarlah cita cita sebelum cinta</span>
+      <br>
+    </div>
+      <div id="project1">
+        <a href="https://41215576.github.io/ayuningrat.github.io/index.html"><h2>My Website</h2></a>
+    </div>
+    <script>
+    $(document).ready(function(){
+      $('#profile').click(function(){
+        $('#profile1').addClass('wokwok');
+        $('#profile1').addClass('wokwok');
+        $('#tentang1').removeClass('wokwok');
+        $('#project1').removeClass('wokwok');
+        return false; 
+      });
+      $('#tentang').click(function(){
+        $('#tentang1').addClass('wokwok');
+        $('#profile1').removeClass('wokwok');
+        $('#project1').removeClass('wokwok');
+         return false; 
+      });
+      $('#project').click(function(){
+        $('#project1').addClass('wokwok');
+        $('#profile1').removeClass('wokwok');
+        $('#tentang1').removeClass('wokwok');
+        return false; 
+      });
+    });
+    </script>
+</body>
+</html>
